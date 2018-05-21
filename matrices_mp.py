@@ -5,7 +5,7 @@ def matrixMultiply(a,b):
             Also checks if matrices are allowed to be multiplied
         """
 
-#size check
+#size check 
 # a[i][m] - size ob matrix a
 # b[m][j] - size of matrix b
 # so 'm' should be equal

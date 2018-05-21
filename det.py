@@ -8,7 +8,7 @@ Then math comes in.
 """
 
 
-def det(a):
+def det(a): 
 
     detValue = 0
     #check if matrix is ok

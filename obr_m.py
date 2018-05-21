@@ -33,7 +33,7 @@ def det(a):
         # We can optimise it to look for zeroes in a row but that can cause
         # more complications with iterators
 
-
+ 
         for k in xrange(len(a)):
             for i in xrange(len(a)):
                 #fix j postition
@@ -79,7 +79,7 @@ def obr(a):
         print "cant calculate "
         exit()
 
-    
+
 
     return result
 
