@@ -1,11 +1,11 @@
 #!/usr/bin/env python
-
+from __future__ import division
 def matrixMultiply(a,b):
         """ Returns product of two matrices
             Also checks if matrices are allowed to be multiplied
         """
 
-#size check 
+#size check
 # a[i][m] - size ob matrix a
 # b[m][j] - size of matrix b
 # so 'm' should be equal
@@ -17,16 +17,16 @@ def matrixMultiply(a,b):
 
 
         #initialization of  result matrix
-
+        #print a,b
         c = [0]*len(a)
-        for i in range(len(a)):
+        for i in xrange(len(a)):
             c[i] = [0] * len(a[i])
-            print c
         # taking 1st item list length (there should be at least one item)
-            for j in xrange(len(b[0])):
-                for i in xrange(len(a)):
-                    for m in xrange(len(a[i])):
-                        c[i][j] += a[i][m]*b[m][j]
+        for i in xrange(len(a[0])):
+            for j in xrange(len(a)):
+                for m in xrange(len(a[j])):
+                    #print a[i][m],b[m][i]
+                    c[i][j] += a[i][m]*b[m][j]
 
 
         return c
